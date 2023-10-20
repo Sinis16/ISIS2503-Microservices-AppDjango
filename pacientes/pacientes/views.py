@@ -11,7 +11,7 @@ def PacienteList(request):
     context = list(queryset.values('id', 'name'))
     return JsonResponse(context, safe=False)
 
-def VariableCreate(request):
+def PacienteCreate(request):
     if request.method == 'POST':
         data = request.body.decode('utf-8')
         data_json = json.loads(data)

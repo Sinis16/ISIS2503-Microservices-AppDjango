@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'measurements',
+    'citas',
 ]
 
 MIDDLEWARE = [
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'monitoring.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'measurements_db',
-        'USER': 'measurements_user',
+        'NAME': 'citas_db',
+        'USER': 'citas_user',
         'PASSWORD': 'isis2503',
         'HOST': '0.0.0.0',
         'PORT': '5432',
@@ -133,4 +133,4 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-PATH_VAR = "http://0.0.0.0:8080/variables"
+PATH_VAR = "http://0.0.0.0:8080/pacientes"

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Variable
+from .models import Paciente
 
 # Register your models here.
-admin.site.register(Variable)
+admin.site.register(Paciente)
